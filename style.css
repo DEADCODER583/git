@@ -1,0 +1,81 @@
+body {
+	background-color: #FFDBCC;
+	}
+
+#Logo {
+	margin-left: 0;
+	width: 60px;
+	height: 50px;
+	}
+
+#LogoC {
+	background-color: #00759B;
+	width: 60px;
+	height: 52.5px;
+	margin-left: 5px;
+	margin-top: 2.5px;
+    margin-bottom: 2.5px;
+	border-radius: 50px;
+    float: left;
+    transition: background-color 0.2s;
+	}
+
+#LogoC:hover {
+    background-color: #F38;
+}
+
+#NavIcon {
+	margin-left: 0;
+	width: 50px;
+	height: 50px;
+	}
+
+#NavIcon:root {
+    --button_shadow: #FFFFFF;
+}
+
+.body-img {
+    top: 1000px;
+}
+
+#NavIconC {(Casing)
+	background-color: #82DEFC;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+	width: 50px;
+	height: 50px;
+    float: right;
+    border-radius: 10px;
+	}
+
+#NavIconC:hover {
+    background-color:aquamarine;
+    }
+
+#Main {
+	background-color: #FFFFFF;
+	height: 1000px;
+	width: 90%;
+	margin: auto;
+    margin-bottom: 30px;
+	}
+
+#MBar {
+	background-color: #82DEFC;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	}
+
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    background-color: blue;
+    height: 500px;
+    transition: 1s;
+}
