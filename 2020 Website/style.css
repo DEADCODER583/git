@@ -1,16 +1,31 @@
+@keyframes moveSlideshow { 100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
 body {
 	background-image: url(Images/Background.jpg);
     background-size: auto;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 	}
 
-#Logo {
+.title {
+    position: relative;
+    font-family: fantasy;
+    left: 90px;
+    font-size: 30px;
+    float: left;
+    top: 9px;
+    }
+
+.logo {
 	margin-left: 0;
 	width: 60px;
 	height: 50px;
 	}
 
-#LogoC {
+.logoCasing {
 	background-color: #811;
 	width: 60px;
 	height: 52.5px;
@@ -22,11 +37,11 @@ body {
     transition: background-color 0.5s;
 	}
 
-#LogoC:hover {
+.logoCasing:hover {
     background-color: #511;
-}
+    }
 
-#NavIcon {
+.navIcon {
 	width: 50px;
 	height: 50px;
     margin-right: 5px;
@@ -38,19 +53,20 @@ body {
 	background-color: #811;
 	}
 
-#NavIcon:hover {
+.navIcon:hover {
     background-color: #511;
     }
 
-#Main {
-	background-image: repeating-linear-gradient(to top, #900, #300);
+.main {
+    background-color: rgba();
 	height: 1000px;
 	width: 90%;
 	margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 60px
 	}
 
-#MBar {
+.menuBar {
 	background-color: #911;
 	position: fixed;
 	top: 0;
@@ -64,15 +80,106 @@ body {
 	left: 0;
     width: 100%;
     height: 0;
-    background-color: dimgrey;
-    transition: 1s;
+    background-color: black;
+    transition: 0.5s;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
     }
 
-.closebtn {
+.closeButton {
+    color: maroon;
     text-decoration: none;
     position: absolute;
     top: 50px;
     left: 15px;
     font-size: 30px;
+    width: 26px;
+    padding-left: 8px;
     }
+
+.closeButton:hover {
+    background-color: rgba(20,20,20,100);
+    border-radius: 20px;
+    }
+
+.flex {
+    font-family: fantasy;
+    text-decoration: none;
+    color: maroon;
+    position: relative;
+    top: 56px;
+    height: 24px;
+    border-radius: 10px;
+    padding-top: 4px;
+    width: 50px;
+    padding-left: 8px
+    }
+
+.flex:hover {
+    background-color: dimgrey;
+    }
+
+.footer {
+    position: relative;
+    background-color: #911;
+    width: 105%;
+    height: 50px;
+    bottom: -8px;
+    left: -8px;
+    }
+
+.share {
+    position: relative;
+    float: left;
+    left: 15px;
+    top: 10px;
+    }
+
+.info {
+    color: #222;
+    position: relative;
+    font-family: monospace;
+    width: 300px;
+    float: right;
+    right: 55px;
+    bottom: -7px;
+    text-align: end;
+    font-size: 15px
+    }
+
+.marquee-styling {
+    background-color: #222;
+    border-radius: 20px;
+    max-width: 800px;
+    height: 540px;
+    top: 10px;
+    margin: 0 auto;
+    position: relative;
+    }
+
+.marquee-box {
+    top: 20px;
+    height: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    }
+
+.marquee {
+    height: 500px;
+    width: 2270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    animation: moveSlideshow 10s linear infinite;
+    }
+
+.marquee img {
+    height: 500px;
+    width: 500px;
+}
